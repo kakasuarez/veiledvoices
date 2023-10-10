@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <a href="{{ url_for('index') }}">Veiled Voices</a>
+        <a href="{{ url_for('index') }}" id="head-text">Veiled Voices</a>
         <a href="{{ url_for('new_post') }}"><img src="{{ url_for('static', filename='icon.png') }}" ></a>
     </header>
     {% block content %} {% endblock content %}

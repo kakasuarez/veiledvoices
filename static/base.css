@@ -8,14 +8,17 @@
 }
 
 
-header a {
+#head-text {
     display: inline;
-    padding: 2em;
+    padding: 1em;
     text-transform: uppercase;
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 0.1em;
-    text-decoration: underline;
+    text-decoration: none;
     color: white;
+    box-shadow: 0 6px 20px -5px rgba(44, 60, 109, 0.463);
+    background-image: linear-gradient(to right, rgba(67, 137, 50, 0.8), rgba(121, 237, 91, 0.8));
+    border-radius: 12px;
 }
 
 header {

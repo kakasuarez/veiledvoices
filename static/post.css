@@ -32,7 +32,8 @@
 }
 
 textarea {
-    color: #53a3bd;
+    /* color: #60d7ff; */
+    color: white;
     resize: none;
     border: 2px solid black;
     border-radius: 1em;
@@ -57,7 +58,7 @@ form input {
     width: 10vw;
     height: 5vh;
     border-radius: 0.5em;
-    /* text-transform: uppercase; */ 
+    /* text-transform: uppercase;  */
     align-self: flex-end;
     border: none;
     outline: none;
@@ -66,13 +67,14 @@ form input {
     font-size: 1.25em;
     box-shadow: 0 6px 20px -5px rgba(152, 170, 223, 0.463);
     margin: 10px 2px;
+    cursor: pointer;
 }
 
 textarea::placeholder {
     font-size: 1.25em;
     text-align: center;
-    /* color: white; */
-    color: #A5D7E8;
+    color: white;
+    /* color: #60d7ff; */
 }
 
 .comment-holder {
@@ -87,8 +89,5 @@ textarea::placeholder {
     margin: 1em;
     border-radius: 0.5em;
     padding: 0.5em;
-    border: 2px solid rgb(114, 167, 245);
-    /* background-color: rgba(46, 13, 146, 0.386); */
     background-color: #222222;
-    /* background-color: #19376D; */
 }
