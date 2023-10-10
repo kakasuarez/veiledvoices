@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='post.css') }}">
+{% endblock style %}
+{% block content %}
+<div class="all-content">
+    <div class="question-holder">
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.content }}</p>
+    </div>
+    <form method="POST">
+        <textarea name="content" placeholder="Enter comment"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+    <div class="comment-holder">
+        {% for comment in post.comments %}
+            <p>{{ comment.content }}</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}

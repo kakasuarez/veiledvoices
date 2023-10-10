@@ -1,0 +1,44 @@
+.title-input, .content-input {
+    resize: none;
+    margin-bottom: 0.5em;
+}
+
+form {
+    margin: auto;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    width: 20%;
+}
+
+
+.title-input::placeholder, .content-input::placeholder {
+    width: max-content;
+    margin: auto;
+}
+
+
+form input {
+    width: 10vw;
+    height: 5vh;
+    border-radius: 0.5em;
+    /* text-transform: uppercase; */ 
+    align-self: flex-end;
+    border: none;
+    outline: none;
+    background: #FF6363;
+    color: #230a0a;
+    font-size: 1.25em;
+    box-shadow: 0 6px 20px -5px rgba(152, 170, 223, 0.463);
+    margin: 10px 2px;
+}
+
+textarea::placeholder {
+    font-size: 1.25em;
+    text-align: center;
+    /* color: white; */
+    color: #A5D7E8;
+}

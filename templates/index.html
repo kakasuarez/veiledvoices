@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+{% endblock %}
+{% block content %}
+<div class="content">
+    <div class="title-heading"><p>Posts</p></div>
+        <div class="content-box">
+            {% for post in posts %}
+                <div class="post">
+                    <a href="{{ url_for('post', post_id=post.id) }}">
+                        <h3 class="title">
+                            {{ post.id }}. {{ post.title }}
+                        </h3>
+                    <div class="subtitle">
+                        <p>{{ post.content[:20] }}{% if len(post.content) > 20 %}...{% endif %}</p>
+                    </div>
+                    <div class="comment-button-container">
+                        <button class="comment-button">Comment</button>
+                    </div>
+                    </a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

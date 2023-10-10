@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'PT Serif', serif;
+}
+
+
+header a {
+    display: inline;
+    padding: 2em;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.1em;
+    text-decoration: underline;
+    color: white;
+}
+
+header {
+    position: sticky;
+    font-size: 2em;
+    /* background-color: rgb(174, 146, 198); */
+    /* background-color: #19376D; */
+    color: white;
+    border-radius: 2.5em;
+    padding: 2.5em;
+    padding-bottom: 0em;
+}
+
+body {
+    /* background-image: linear-gradient(to right, #512a7c, #150d19); */
+    /* background-image: linear-gradient(to bottom right, #0B2447, #19376D); */
+    background-color: #222222;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-attachment: fixed;
+}
+html {
+    height: 100%;
+}
+header img {
+    width: 75px;
+    display: inline;
+    float: right;
+    margin: 0;
+    transform: translateY(-50%);
+}
